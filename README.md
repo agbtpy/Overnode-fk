@@ -1,4 +1,4 @@
-# Overnode-fk# 🎮 Over-Renew
+🎮 Over-Renew
 
 Overnode 免费服务器自动续期脚本，通过 Discord OAuth 登录面板并触发续期，支持 Telegram 通知与 cron-job.org 自动调度。
 
