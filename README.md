@@ -1,68 +1,9 @@
-环境变量（运行前必须配置）
-必要变量
-变量名
-格式
-说明
-DISCORD_TOKEN
-字符串
-Discord 用户 Token，用于 OAuth 授权登录
-非必要变量
-变量名
-格式
-说明
-默认值
-TG_BOT
-TG_CHAT_ID,TG_TOKEN
-Telegram 推送配置，用逗号分隔：聊天 ID 和 Bot Token
-空（不推送）
-CRON_JOB
-API_KEY,JOB_ID
-cron-job.org 调度配置，用逗号分隔：API Key 和 Job ID
-空（不写回调度）
-GOST_PROXY
-任意非空字符串
-启用 HTTP/HTTPS 代理（指向 127.0.0.1:8080）
-空（不使用代理）
-内置常量（代码中硬编码，无需配置）
-变量名
-值
-说明
-DISCORD_API
-"https://discord.com/api/v9"
-Discord API 地址
-CLIENT_ID
-"972921155205877860"
-Discord OAuth 客户端 ID
-REDIRECT_URI
-"https://console.overnode.fr/auth/discord/callback"
-OAuth 回调地址
-GUILD_ID
-"1515897528011329657"
-Discord 服务器 ID
-SITE_URL
-"https://console.overnode.fr"
-目标网站地址
-UA
-User-Agent 字符串
-浏览器标识
-SERVERS
-列表
-要续期的服务器列表（含 name、id、code）
-自动更新变量（脚本自修改）
-变量名
-格式
-说明
-LAST_RENEWED_US
-"YYYY-MM-DD HH:MM:SS"
-美国服务器上次续期时间（北京时间）
-LAST_RENEWED_FR
-"YYYY-MM-DD HH:MM:SS"
-法国服务器上次续期时间（北京时间）
-⚠️ 这两个变量由脚本自动更新，无需手动配置。
-
-
 Overnode 免费服务器自动续期脚本，通过 Discord OAuth 登录面板并触发续期，支持 Telegram 通知与 cron-job.org 自动调度。
 
+必要变量
+DISCORD_TOKEN 
+非必要变量
+TG_BOT  Telegram 推送配置，用逗号分隔：聊天 ID 和 Bot Token
 ## 🔧 环境变量
 
 | 变量 | 说明 | 示例 |
